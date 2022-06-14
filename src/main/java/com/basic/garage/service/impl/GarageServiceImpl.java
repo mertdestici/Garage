@@ -169,6 +169,15 @@ public class GarageServiceImpl implements GarageService {
         for (Vehicle vehicle : vehicleList) {
             garageSlot += vehicle.getSlot();
         }
+        int counter = 0;
+        for (int i = 0; i < slotList.length; i++) {
+            if (slotList[i] == 0){
+                counter++;
+            }
+        }
+        if(counter < slot){
+            return false;
+        }
 
         int availableSlot = MAX_GARAGE_SLOT - garageSlot;
         if (availableSlot < slot) {
