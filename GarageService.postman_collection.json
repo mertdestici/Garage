@@ -1,0 +1,72 @@
+{
+	"info": {
+		"_postman_id": "b2e1a53b-8eda-45a4-86c3-36999ff3a1d8",
+		"name": "GarageService",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "park",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "park 34-BO-1987 Red Truck"
+				},
+				"url": {
+					"raw": "http://localhost:8080/park",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"park"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "status",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/status/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"status",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "leave",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/leave/3",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"leave",
+						"3"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
